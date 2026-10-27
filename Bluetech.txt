@@ -1,0 +1,50 @@
+﻿Blue Tech
+tema: e-commerce produtos apple.
+
+
+Aplicação web de e-commerce especializada em smartphones apple e acessórios.
+O objetivo é permitir que clientes consultem o catálogo, vejam preço,
+cor e armazenamento de cada aparelho e realizem pedidos online.
+
+
+
+
+entidades:
+
+
+ produtos: [
+ { 
+ id: 1, modelo: "iphone 18 pro", valor:  11.999, memoria: 1Tb, cor: "magenta"
+ }
+ { 
+ id: 2, modelo: "iphone 19 pro max", valor:  16.999, memoria: 2Tb, cor: "rosa bebe"
+ }
+ { 
+ id: 3, modelo: "iphone 20", valor:  12.999, memoria: 524gb, cor: "azul celeste"
+ }
+ ]
+ 
+ clientes: [
+ {
+ id: 12, nome: "bruna", email: "princesabruninha@teste.com", cep: 96405-778, cpf: 123.456.789-10
+ }
+ {
+ id: 13, nome: "jonath", email: "jondivo@teste.com", cep: 96405-888, cpf: 133.486.739-18
+ }
+ {
+ id: 14, nome: "viktor", email: "viktordabicicletinha@teste.com", cep: 96885-978, cpf: 166.756.999-20
+ }
+ ]
+ 
+ 
+ funcionario:[
+ {
+ id: 4, nome:"lucas", funcao: "atendendente do suporte", codigo_cracha: 8989
+ }
+  {
+ id: 5, nome:"thiago", funcao: "cuidar estoque e atualizar o site", codigo_cracha: 2222
+ }
+  {
+ id: 4, nome:"luis", funcao: "cuidar do financeiro", codigo_cracha: 1313
+ }
+ ]

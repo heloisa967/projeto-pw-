@@ -1,0 +1,11 @@
+funcionario:[
+ {
+ "id": 4, "nome":"lucas", "funcao": "atendendente do suporte", "codigo_cracha": 8989
+ }
+  {
+ "id": 5, "nome":"thiago", "funcao": "cuidar estoque e atualizar o site", "codigo_cracha": 2222
+ }
+  {
+ "id": 4, "nome":"luis", "funcao": "cuidar do financeiro", "codigo_cracha": 1313
+ }
+ ]

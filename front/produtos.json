@@ -1,0 +1,11 @@
+ produtos: [
+ { 
+ "id": 1, "modelo": "iphone 18 pro", "valor":  11.999, "memoria": 1Tb, "cor": "magenta"
+ }
+ { 
+ "id": 2, "modelo": "iphone 19 pro max", "valor":  16.999, "memoria": 2Tb, "cor": "rosa bebe"
+ }
+ { 
+ "id": 3, "modelo": "iphone 20", "valor":  12.999, "memoria": 524gb, "cor": "azul celeste"
+ }
+ ]
