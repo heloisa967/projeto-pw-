@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blue Tech</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blue Tech</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
 
-        <main>
-            <h1> <b>BLUE TECH</b></h1>
-            <nav>
-                <ul>
-                    <a href="Bluetech.txt">Proposta do Projeto</a>
-                </ul>
-            </nav>
-            <footer>
-                <h3> <em>@heloisapereira</em></h3>
-                <script>
-                    const urlDoArquivo = 'Bluetech.txt';
-                </script>
-            </footer>
-        </main>
+  <header>
+    <h1>BLUE<span>TECH</span></h1>
+    <nav>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#carrinho">Carrinho (<span id="qtd">0</span>)</a>
+      <a href="admin.html">Admin</a>
+    </nav>
+  </header>
 
-    </header>
+  <div class="banner">
+    <h2>Smartphones Apple</h2>
+    <p>Escolha o modelo, a cor e o armazenamento e faça seu pedido online.</p>
+    <a class="botao-banner" href="#catalogo">Ver catálogo</a>
+  </div>
+
+  <div class="conteudo">
+
+    <h2 class="titulo" id="catalogo">Catálogo</h2>
+    <div class="produtos" id="produtos"></div>
+
+    <h2 class="titulo" id="carrinho">Carrinho</h2>
+    <div class="caixa" id="area-carrinho"></div>
+
+  </div>
+
+  <footer>
+    <p>Blue Tech - projeto acadêmico</p>
+  </footer>
+
+  <script src="dados.js"></script>
+  <script src="script.js"></script>
 </body>
-
 </html>

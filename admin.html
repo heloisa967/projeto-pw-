@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Blue Tech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>BLUE<span>TECH</span> - Admin</h1>
+    <nav>
+      <a href="#produtos">Produtos</a>
+      <a href="#clientes">Clientes</a>
+      <a href="#funcionarios">Funcionários</a>
+      <a href="index.html">Voltar à loja</a>
+    </nav>
+  </header>
+
+  <div class="conteudo">
+
+    <!-- ========== PRODUTOS ========== -->
+    <section class="bloco" id="produtos">
+      <h2 class="titulo">Produtos</h2>
+      <div class="form">
+        <label>Modelo <input id="produtos_modelo"></label>
+        <label>Valor (R$) <input id="produtos_valor" type="number"></label>
+        <label>Memória <input id="produtos_memoria" placeholder="ex: 512 GB"></label>
+        <label>Cor <input id="produtos_cor"></label>
+        <label>Cor (visual) <input id="produtos_cor_hex" type="color" value="#1976d2"></label>
+      </div>
+      <button id="produtos_botao" onclick="salvar('produtos')">Cadastrar</button>
+      <button class="cinza" onclick="limpar('produtos')">Limpar</button>
+
+      <div class="tabela">
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Modelo</th><th>Valor</th><th>Memória</th><th>Cor</th><th>Cor (visual)</th><th>Ações</th></tr>
+          </thead>
+          <tbody id="produtos_lista"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== CLIENTES ========== -->
+    <section class="bloco" id="clientes">
+      <h2 class="titulo">Clientes</h2>
+      <div class="form">
+        <label>Nome <input id="clientes_nome"></label>
+        <label>E-mail <input id="clientes_email" type="email"></label>
+        <label>CPF <input id="clientes_cpf" placeholder="000.000.000-00"></label>
+        <label>CEP <input id="clientes_cep" placeholder="00000-000"></label>
+      </div>
+      <button id="clientes_botao" onclick="salvar('clientes')">Cadastrar</button>
+      <button class="cinza" onclick="limpar('clientes')">Limpar</button>
+
+      <div class="tabela">
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Nome</th><th>E-mail</th><th>CPF</th><th>CEP</th><th>Ações</th></tr>
+          </thead>
+          <tbody id="clientes_lista"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- ========== FUNCIONARIOS ========== -->
+    <section class="bloco" id="funcionarios">
+      <h2 class="titulo">Funcionários</h2>
+      <div class="form">
+        <label>Nome <input id="funcionarios_nome"></label>
+        <label>Função <input id="funcionarios_funcao"></label>
+        <label>Código do crachá <input id="funcionarios_codigo_cracha" type="number"></label>
+      </div>
+      <button id="funcionarios_botao" onclick="salvar('funcionarios')">Cadastrar</button>
+      <button class="cinza" onclick="limpar('funcionarios')">Limpar</button>
+
+      <div class="tabela">
+        <table>
+          <thead>
+            <tr><th>ID</th><th>Nome</th><th>Função</th><th>Crachá</th><th>Ações</th></tr>
+          </thead>
+          <tbody id="funcionarios_lista"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <button class="cinza" onclick="restaurar()">Restaurar dados originais</button>
+
+  </div>
+
+  <script src="dados.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

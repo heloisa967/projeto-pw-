@@ -1,0 +1,267 @@
+/* style.css - visual da loja e do admin */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f2f6fb;
+  color: #222;
+}
+
+/* ----- topo ----- */
+header {
+  background: #0b2a5b;
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+header h1 span {
+  color: #4fc3f7;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+nav a:hover {
+  color: #4fc3f7;
+}
+
+/* ----- banner da loja ----- */
+.banner {
+  background: linear-gradient(135deg, #0b2a5b, #1976d2);
+  color: white;
+  text-align: center;
+  padding: 70px 20px;
+}
+
+.banner h2 {
+  font-size: 36px;
+  margin: 0 0 10px 0;
+}
+
+.banner p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.botao-banner {
+  background: white;
+  color: #0b2a5b;
+  padding: 12px 26px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ----- conteudo ----- */
+.conteudo {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.titulo {
+  color: #0b2a5b;
+  margin-top: 30px;
+}
+
+/* ----- produtos ----- */
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.celular {
+  width: 80px;
+  height: 150px;
+  border-radius: 16px;
+  margin: 0 auto 14px auto;
+  border: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+/* a "camera" do celular */
+.celular::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 18px;
+  background: #222;
+  border-radius: 50%;
+  margin: 8px;
+}
+
+.preco {
+  font-size: 22px;
+  font-weight: bold;
+  color: #0b2a5b;
+}
+
+/* ----- carrinho ----- */
+.caixa {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.total {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* ----- botoes ----- */
+button {
+  background: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background: #0d5bb5;
+}
+
+button.cinza {
+  background: #78909c;
+}
+
+button.vermelho {
+  background: #e53935;
+}
+
+button.pequeno {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+/* ----- admin ----- */
+.bloco {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bloco .titulo {
+  margin-top: 0;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 9px;
+  margin-top: 4px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+input[type=color] {
+  height: 40px;
+  padding: 2px;
+}
+
+.tabela {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  background: #0b2a5b;
+  color: white;
+  text-align: left;
+  padding: 10px;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  white-space: nowrap;
+}
+
+tr:nth-child(even) td {
+  background: #f7faff;
+}
+
+.bolinha {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 6px;
+  border: 1px solid #999;
+}
+
+/* ----- rodape ----- */
+footer {
+  background: #0b2a5b;
+  color: #cfd8dc;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
